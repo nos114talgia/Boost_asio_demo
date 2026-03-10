@@ -3,12 +3,13 @@
 This is a simple TCP client-server demonstration using **Boost.Asio** in C++. The server listens for incoming connections on port `8080` and sends a greeting message to each connected client. The client connects to the server and prints the received message.
 
 ## Project Structure
-
+```bash
 boost_asio_demo/
 │
 ├── CMakeLists.txt        # CMake build configuration
 ├── server.cpp            # TCP server implementation
 └── client.cpp            # TCP client implementation
+```
 
 ## Requirements
 
@@ -67,7 +68,7 @@ In a separate terminal, run the client:
 ## Notes
 
 - Make sure the server is running before starting the client.
-- - The client trims any `\r` character at the end of the message to handle different line endings.
+- The client trims any `\r` character at the end of the message to handle different line endings.
 
 
 
